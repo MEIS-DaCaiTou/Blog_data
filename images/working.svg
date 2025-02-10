@@ -1,4 +1,14 @@
-<svg width="100" height="28" xmlns="http://www.w3.org/2000/svg">
-    <rect width="100" height="28" fill="lightblue" rx="8"/>
-    <text x="50" y="18" font-size="13" fill="black" text-anchor="middle">🐟 科研摸鱼中</text>
+<svg width="120" height="40" xmlns="http://www.w3.org/2000/svg">
+    <!-- 定义模糊效果 -->
+    <defs>
+        <filter id="blurEffect">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+        </filter>
+    </defs>
+
+    <!-- 半透明矩形背景，模拟雾玻璃效果 -->
+    <rect width="120" height="40" fill="rgba(255, 255, 255, 0.2)" rx="10" filter="url(#blurEffect)" />
+    
+    <!-- 添加文字 -->
+    <text x="60" y="22" font-size="14" fill="white" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold">🐟 上班摸鱼中</text>
 </svg>
